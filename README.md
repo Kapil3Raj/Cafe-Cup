@@ -48,5 +48,5 @@ Welcome to **CafeCup**, a modern and aesthetic café website built to provide an
 
 - cd server
 - npm install
-- npm run start
+- npm run dev
 
