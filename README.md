@@ -28,22 +28,25 @@ Welcome to **CafeCup**, a modern and aesthetic café website built to provide an
 ## 📷 Screenshots
 
 > Add screenshots or GIFs of the menu page, cart, and admin panel here for better visual understanding.
-![Uploading Screenshot 2025-05-06 002854.png…]()
-![Screenshot 2025-05-06 002918](https://github.com/user-attachments/assets/8ea74bf4-33c7-4341-bdd9-12e1f0682f77)
-![Screenshot 2025-05-06 002958](https://github.com/user-attachments/assets/469c8901-372e-4cdb-aa11-c2f1bd3a669c)
+![Screenshot 2025-05-06 002854](https://github.com/user-attachments/assets/e6e1e5c5-8719-4ef1-9db4-77ea93cc2a8f)
+![Screenshot 2025-05-06 002918](https://github.com/user-attachments/assets/81cbe8bb-ef19-4551-b2ba-656aa5df947d)
+![Screenshot 2025-05-06 002958](https://github.com/user-attachments/assets/81c85344-a4d4-47ca-b3f1-79f0cfb3658b)
+![Screenshot 2025-05-06 003052](https://github.com/user-attachments/assets/56fc0a82-9f73-4372-ae69-7e5b16a48fd2)
+![Screenshot 2025-05-06 003116](https://github.com/user-attachments/assets/9718403a-403f-4af4-94c8-d537435257be)
+
 
 
 ## 📦 Setup & Installation
 
 ### Frontend
 
-cd client
-npm install
-npm run dev
+- cd client
+- npm install
+- npm run dev
 
 ### Backend
 
-cd server
-npm install
-npm run start
+- cd server
+- npm install
+- npm run start
 
