@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Patrick+Hand&family=Style+Script&display=swap');
+@import "tailwindcss";
+
+
+
+@theme {
+        --color-brown: #4B3621;
+       
+      
+  }
+
+@layer utilities{
+          .cartoon-box {
+             @apply  bg-white text-black shadow-[7px_7px_0_rgba(0,0,0)] ;
+          }
+        
+          .cartoon-input {
+            @apply border-[3px] border-black bg-white text-black p-2 rounded-md focus:outline-none focus:ring-1 focus:ring-black;
+          }
+        
+          .cartoon-white-button {
+            @apply border-[3px] border-black bg-white text-black px-4 py-2 rounded-md hover:bg-black hover:text-white transition duration-250 flex justify-center items-center gap-1;
+          }
+
+          .cartoon-black-button {
+            @apply border-[3px] border-black bg-black text-white px-4 py-2 rounded-md hover:bg-white hover:text-black transition duration-250  flex justify-center items-center gap-1;
+          }
+        
+         
+          .patrick{
+                  font-family: "Patrick Hand", cursive;
+                  font-weight: 400;
+                  letter-spacing: 1px;
+
+          }
+          .styleScript {
+            font-family: "Style Script", cursive;
+            font-weight: 400;
+          }
+
+          .amatic{
+            font-family: "Amatic SC", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+          }
+
+         
+}
+
