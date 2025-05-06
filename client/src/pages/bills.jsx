@@ -8,16 +8,20 @@ const Bills = () => {
   const [bills, setBills] = useState([]);
   const [filteredBills, setFilteredBills] = useState([]);
   const [search, setSearch] = useState('');
+  const [loading, setLoading] = useState(true); // Added loading state
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchBills = async () => {
       try {
+        setLoading(true); // Start loading
         const response = await axios.get(`${import.meta.env.VITE_BACKEND_BASEURL}/api/bills`);
         setBills(response.data);
         setFilteredBills(response.data);
       } catch (err) {
         console.error(err);
+      } finally {
+        setLoading(false); // Stop loading
       }
     };
     fetchBills();
@@ -43,7 +47,6 @@ const Bills = () => {
         <IoIosArrowBack />
       </button>
 
-
       <h1 className="amatic w-full text-5xl font-bold text-center mb-8 text-white px-6 py-2 inline-block rounded-2xl">
         Bills
       </h1>
@@ -57,7 +60,12 @@ const Bills = () => {
           className="w-full px-5 py-3 mb-6 text-black rounded-xl border-4 border-black bg-white placeholder-gray-500 patrick shadow-lg"
         />
 
-        {filteredBills.length === 0 ? (
+        {loading ? (
+           <div className="flex flex-col items-center justify-center py-10">
+           <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-white mb-4"></div>
+           <p className="text-white text-3xl amatic">Loading...</p>
+         </div>
+        ) : filteredBills.length === 0 ? (
           <p className="text-white text-center text-xl">No bills found.</p>
         ) : (
           filteredBills.map((bill) => (
